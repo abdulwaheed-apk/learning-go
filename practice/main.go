@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"math"
+	"time"
 )
 
 func main() {
@@ -23,23 +23,30 @@ func main() {
 	// 	fmt.Println("Your age is: ", age)
 	// }
 
-	i1, i2, i3 := 10, 20, 30
-	intSum := i1 + i2 + i3
+	// i1, i2, i3 := 10, 20, 30
+	// intSum := i1 + i2 + i3
 
-	fmt.Println("Sum is:", intSum)
+	// fmt.Println("Sum is:", intSum)
 
-	f1, f2, f3 := 20.5, 30.3, 10.01
+	// f1, f2, f3 := 20.5, 30.3, 10.01
 
-	floatSum := f1 + f2 + f3
+	// floatSum := f1 + f2 + f3
 
-	fmt.Println("FLoat sum is: ", floatSum)
+	// fmt.Println("FLoat sum is: ", floatSum)
 
-	floatSum = math.Round(floatSum*100) / 100
+	// floatSum = math.Round(floatSum*100) / 100
 
-	fmt.Println("Accurate sum is: ", floatSum)
+	// fmt.Println("Accurate sum is: ", floatSum)
 
-	circleRadius := 15.2
-	circumference := circleRadius * 2 * math.Pi
+	// circleRadius := 15.2
+	// circumference := circleRadius * 2 * math.Pi
 
-	fmt.Printf("Circumference: %.3f\n", circumference)
+	// fmt.Printf("Circumference: %.3f\n", circumference)
+
+	n := time.Now()
+
+	parsedTime := n.Format(time.ANSIC)
+
+	fmt.Println("Time is:", n)
+	fmt.Println("Parsed time is:", parsedTime)
 }
